@@ -5,7 +5,45 @@
 }
 
 body {
-  background: #fff;
-  overflow-x: hidden;
+  background: #d4fef2;
+  overflow: hidden;
+  height: 100%;
   font-family: "Exo 2", sans-serif;
+}
+
+.title-text {
+  font-size: 2rem;
+  color: #062930;
+}
+
+nav {
+  /* display: inline-block; */
+  float: right;
+  font-size: 2rem;
+}
+
+.container-nav > a:before,
+.container-nav > a:after {
+  position: absolute;
+  opacity: 0;
+  top: 0px;
+  transition: 0.3s;
+}
+
+nav > a:before {
+  content: "(";
+  left: 0px;
+  transform: translateX(10px);
+}
+
+nav > a:after {
+  content: ")";
+  right: 0px;
+  transform: translateX(-10px);
+}
+
+nav > a:hover::before,
+nav > a:hover::after {
+  opacity: 1;
+  transform: translateX(0px);
 }
