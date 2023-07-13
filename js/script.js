@@ -22,3 +22,13 @@ document.documentElement.style.setProperty(
   "--scroll-padding",
   navHeight + "px"
 );
+
+//ABout Me
+
+const e = document.getElementById("my-bio");
+
+const file = "../assets/about.txt";
+
+const reader = new FileReader("../assets/about.txt");
+
+console.log(reader);
