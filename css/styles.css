@@ -102,6 +102,29 @@ section {
   color: var(--text-color);
 }
 
+.ref-anchor {
+  display: flex;
+  margin: 2rem auto;
+  width: 6rem;
+  color: white;
+  font-size: 0.8rem;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 1rem;
+  cursor: pointer;
+  background: linear-gradient(#252525, #252525 50%, #80ffd4 50%, #80ffd4);
+  background-size: 100% 200%;
+  transition: background 1s; /*trasition effect for background*/
+}
+
+.ref-anchor:hover {
+  color: var(--text-color);
+  background-position: 100% 100%;
+}
+
 /* #hero section starts*/
 /* ************************************* */
 
@@ -159,29 +182,6 @@ section {
   animation-delay: 2.5s;
 }
 
-.ref-anchor {
-  display: flex;
-  margin: 2rem auto;
-  width: 100px;
-  color: white;
-  font-size: 0.8rem;
-  box-sizing: border-box;
-  font-family: sans-serif;
-  text-align: center;
-  font-weight: bold;
-  text-transform: uppercase;
-  padding: 1rem 0.5rem;
-  cursor: pointer;
-  background: linear-gradient(#252525, #252525 50%, #80ffd4 50%, #80ffd4);
-  background-size: 100% 200%;
-  transition: background 1s; /*trasition effect for background*/
-}
-
-.ref-anchor:hover {
-  color: var(--text-color);
-  background-position: 100% 100%;
-}
-
 /* #hero section ends*/
 
 /* #about section starts*/
@@ -201,6 +201,7 @@ section {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
   background-color: #d4fedd;
+  height: 35vh;
 }
 
 .bio {
@@ -217,7 +218,7 @@ section {
 .skill-section {
   width: var(--about-content-width);
   text-align: center;
-  /* background-color: azure; */
+  overflow: hidden;
 }
 
 .skill-section h3 {
