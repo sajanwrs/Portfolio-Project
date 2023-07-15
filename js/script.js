@@ -23,12 +23,11 @@ document.documentElement.style.setProperty(
   navHeight + "px"
 );
 
-//ABout Me
+//About Me
 
-const e = document.getElementById("my-bio");
+const e = document.getElementById("bio-text");
 
-const file = "../assets/about.txt";
+const bio =
+  "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque eum tempora ratione consequatur doloribus, aperiam alias laborum enim excepturi culpa officia, ea quisquam a voluptates, esse beatae molestias delectus corporis.";
 
-const reader = new FileReader("../assets/about.txt");
-
-console.log(reader);
+e.append(bio);

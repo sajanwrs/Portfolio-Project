@@ -1,3 +1,10 @@
+/* Variables */
+:root {
+  --height: 100vh;
+  --text-color: #062930;
+  --about-content-width: 30%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +18,7 @@ html {
 body {
   background: #d4fef2;
   overflow-x: hidden;
-  height: 100vh;
+  height: var(--height);
   font-family: "Exo 2", sans-serif;
 }
 
@@ -35,7 +42,7 @@ li {
 }
 
 a {
-  color: #062930;
+  color: var(--text-color);
 }
 
 .logo {
@@ -71,11 +78,28 @@ ul a:hover {
   border-radius: 5px;
 }
 
+/* Burger menu */
+.mobile-button {
+  color: var(--text-color);
+  font-size: 2rem;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  display: none;
+}
+
 /* Navbar customizations ends */
 
 section {
-  height: 100vh;
+  height: var(--height);
   border: 1px solid black;
+}
+
+.section-titile {
+  font-size: 3rem;
+  text-align: center;
+  padding-top: 5rem;
+  color: var(--text-color);
 }
 
 /* #hero section starts*/
@@ -92,13 +116,13 @@ section {
 }
 
 .title-text {
-  font-size: 2rem;
-  color: #062930;
+  font-size: 2.3rem;
+  color: var(--text-color);
   overflow: hidden;
   border-right: 0.2rem solid #062930; /* to create the typewriter cursor effect*/
   white-space: nowrap;
   width: 0;
-  animation: writter 3s steps(20, end) forwards, cursor-blink 1s infinite;
+  animation: writter 3s steps(30, end) forwards, cursor-blink 1s infinite;
 }
 
 /* typewritter effect */
@@ -122,7 +146,7 @@ section {
 }
 
 .name {
-  font-size: 2.3rem;
+  font-size: 2.8rem;
   background-color: #062930;
   color: #80ffd4;
   padding: 0.3rem;
@@ -154,7 +178,7 @@ section {
 }
 
 .ref-anchor:hover {
-  color: #062930;
+  color: var(--text-color);
   background-position: 100% 100%;
 }
 
@@ -162,25 +186,48 @@ section {
 
 /* #about section starts*/
 /* ************************************* */
+
 .container-about {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   gap: 2.5rem;
   margin: auto;
+  padding-top: 10rem;
 }
 
-.about-img {
-  height: 37.5rem;
-  width: 37.5rem;
+.bio,
+.skill-section {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  background-color: #d4fedd;
 }
 
 .bio {
-  width: 25rem;
+  width: var(--about-content-width);
   padding: 0.6rem;
-  border-radius: 6px;
-  box-shadow: 0px 0px 14px 0px rgba(6, 43, 50, 0.3);
   text-align: center;
+}
+
+.bio-text {
+  color: #300d06;
+  font-size: 1.5rem;
+}
+
+.skill-section {
+  width: var(--about-content-width);
+  text-align: center;
+  /* background-color: azure; */
+}
+
+.skill-section h3 {
+  padding-top: 1rem;
+  font-size: 1.5rem;
+}
+
+.skill-icon {
+  font-size: 5rem;
+  padding: 4rem;
 }
 
 /* #about section ends*/
@@ -190,7 +237,7 @@ footer > p {
   font-size: 1rem;
   font-weight: bold;
   padding: 10px;
-  color: #062930;
+  color: var(--text-color);
 }
 
 /* To fit in the smaller screens */

@@ -10,7 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap"
       rel="stylesheet"
     />
+    <!-- javascript links -->
+    <script src="https://kit.fontawesome.com/fc470eb836.js" crossorigin="anonymous"></script>
 
+    <!-- CSS links -->
     <link rel="stylesheet" href="/css/styles.css" />
     <title>Portfolio</title>
   </head>
@@ -35,7 +38,7 @@
       <h1 class="title-text">
         <span class="hello">Hello,</span>
         <span> name is <span class="name">mrahman</span></span>      
-        An aspiring web developer..
+        An aspiring web developer...
       </h1>
       
       <div class="reference">
@@ -49,14 +52,21 @@
 
   <!-- about section -->
   <section id="about">
-<div class="container-about">
-      <img src="images/about-img.png" alt="about-image" loading="lazy" class="about-img"/>
+    <h2 class="section-titile">About me</h2>
+  <div class="container-about">
+    <div class="skill-section">
+      <h3>My top skiils</h3>   
+        <i class="fab fa-html5 skill-icon"></i>
+        <i class="fab fa-css3 skill-icon"></i>
+        <i class="fab fa-java skill-icon"></i>
+        <i class="fab fa-js-square skill-icon"></i>
+        <i class="fab fa-react skill-icon"></i>
+        <i class="fab fa-github skill-icon"></i>  
+    </div>  
       <div class="bio">
-      <h2 class="section-titile">About me</h2>
-    
-    <p class="bio-text" id="my-bio">
-      <a rel="" class="ref-anchor" href="">Resume</a></p>
-    </div>
+        <p class="bio-text" id="bio-text"></p>
+          <a rel="" class="ref-anchor" href="">Resume</a>
+      </div>
   </div>
   </section>
   <!-- about section ends -->
@@ -64,7 +74,7 @@
   <!-- project section starts -->
   <section id="projects">
     <div class="container-projects">
-      <h2 class="section-projects">Projects</h2>
+      <h2 class="section-titile">Projects</h2>
     </div>
   </section>
   <!-- project section ends -->
@@ -72,16 +82,15 @@
   <!-- contact section starts -->
   <section id="contact">
     <div class="container-contact">
-      <h2 class="section-contact">Contact</h2>
+      <h2 class="section-titile">Contact</h2>
     </div>
   <!-- contact section ends -->
 </main>
 <footer>
   <p>Designed & Coded By mrahman</p>
 </footer>   
-    
+<script src="./js/script.js"></script> 
   </body>
 
-  <!-- javascript links -->
-  <script src="./js/script.js"></script>
+
 </html>
