@@ -193,7 +193,7 @@ section {
   justify-content: space-evenly;
   gap: 2.5rem;
   margin: auto;
-  padding-top: 10rem;
+  padding-top: 15rem;
 }
 
 .bio,
@@ -208,11 +208,14 @@ section {
   width: var(--about-content-width);
   padding: 0.6rem;
   text-align: center;
+  overflow: hidden;
 }
 
 .bio-text {
   color: #300d06;
   font-size: 1.5rem;
+  text-align: center;
+  padding: 4rem 4rem 0 4rem;
 }
 
 .skill-section {

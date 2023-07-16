@@ -31,3 +31,12 @@ const bio =
   "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque eum tempora ratione consequatur doloribus, aperiam alias laborum enim excepturi culpa officia, ea quisquam a voluptates, esse beatae molestias delectus corporis.";
 
 e.append(bio);
+
+//RESUME reader script
+
+const url =
+  "https://drive.google.com/file/d/1dmxxe6ypx4ovj4smt5RMXzd_Ae1KddbO/preview";
+
+function resumeReader() {
+  window.open(url, "_blank");
+}
