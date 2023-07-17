@@ -27,6 +27,7 @@ main {
 }
 
 /* Navbar customizations starts */
+/* ************************************* */
 a {
   text-decoration: none;
 }
@@ -88,7 +89,8 @@ ul a:hover {
   display: none;
 }
 
-/* Navbar customizations ends */
+/* Sections */
+/* ************************************* */
 
 section {
   height: var(--height);
@@ -182,8 +184,6 @@ section {
   animation-delay: 2.5s;
 }
 
-/* #hero section ends*/
-
 /* #about section starts*/
 /* ************************************* */
 
@@ -234,7 +234,53 @@ section {
   padding: 4rem;
 }
 
-/* #about section ends*/
+/* contact section starts */
+/* ************************************* */
+
+.container-contact {
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.container-contact label {
+  line-height: 2.5rem;
+  font-weight: bold;
+  color: #300d06;
+  font-size: 1.2rem;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.3rem;
+  border-radius: 3px;
+  font-size: 0.9rem;
+  border: 2px ridge #300d06;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.3rem 0;
+  background-color: rgb(240, 255, 255);
+  border: 2px ridge #300d06;
+  border-radius: 3px;
+  font-size: 1rem;
+  font-weight: bolder;
+  color: #062930;
+}
+
+.submit-button:hover {
+  background-color: #d4fedd;
+  border: 2px outset #062930;
+  cursor: pointer;
+}
+
+/* footer */
+/* ************************************* */
 
 footer > p {
   text-align: center;
