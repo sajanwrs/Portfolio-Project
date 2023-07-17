@@ -81,8 +81,39 @@
 
   <!-- contact section starts -->
   <section id="contact">
+    <h2 class="section-titile">Get in Touch</h2>
     <div class="container-contact">
-      <h2 class="section-titile">Contact</h2>
+      <form>
+        <div>
+          <label for ="name">Name</label>
+          <input 
+            type="text" 
+            id="name" 
+            placeholder="Your name" required>
+        </div>
+        <div>
+          <label for ="email">Email</label>
+          <input 
+            type="email" 
+            id="email" 
+            name="sender-email" 
+            placeholder="Enter Your Email" required>
+        </div>
+        <div>
+          <label for ="message">Message</label>
+          <textarea 
+            type="text" 
+            id="message" 
+            cols="60" 
+            rows="10" 
+            placeholder="Enter Your Message Here" required></textarea>
+        </div>
+        <input 
+          type="submit" 
+          value="Submit" 
+          id="submit-button" 
+          class="submit-button"/>
+      </form>
     </div>
   <!-- contact section ends -->
 </main>
