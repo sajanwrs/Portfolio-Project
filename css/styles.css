@@ -260,6 +260,7 @@ section {
 
 .container-contact textarea {
   font-size: 0.9rem;
+  resize: none;
 }
 
 .form-input {
