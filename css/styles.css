@@ -247,7 +247,7 @@ section {
   border: 2px solid red;
 }
 
-.item {
+.project-item {
   flex: 0 0 auto;
   border: 2px solid #062930;
   margin: 2rem;
@@ -257,7 +257,7 @@ section {
   transition: 1s;
 }
 
-.item:hover {
+.project-item:hover {
   transform: scale(1.1);
 }
 
