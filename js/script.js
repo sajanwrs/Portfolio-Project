@@ -1,18 +1,3 @@
-// window.addEventListener("scroll", function () {
-//   var navi = document.querySelector("nav");
-//   navi.classList.toggle("sticky", window.scrollY > 0);
-// });
-
-// Script for scrolling to the specified section
-// document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-//   anchor.addEventListener("click", function (e) {
-//     e.preventDefault();
-//     document.querySelector(this.getAttribute("href")).scrollIntoView({
-//       behavior: "smooth",
-//     });
-//   });
-// });
-
 // Script for scrolling to the specified section
 const navItems = document.querySelectorAll(".container-nav a");
 
@@ -24,20 +9,6 @@ function smoothScroll(ev) {
     behavior: "smooth",
   });
 }
-
-// const navItems = document.querySelectorAll(".container-nav a");
-
-// navItems.forEach((e) => e.addEventListener("click", smoothScroll));
-
-// function smoothScroll(ev) {
-//   ev.preventDefault();
-
-//   const target = ev.currentTarget.getAttribute("href");
-//   window.scrollTo({
-//     top: document.querySelector(target).offsetTop,
-//     behavior: "smooth",
-//   });
-// }
 
 //Fix for navbar overlapping problem
 const navHeight = Math.floor(
