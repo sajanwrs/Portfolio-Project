@@ -1,7 +1,8 @@
 /* Variables */
 :root {
   --height: 100vh;
-  --text-color: #062930;
+  --text-color-primary: #062930;
+  --text-color-secondary: #300d06;
   --about-content-width: 30%;
 }
 
@@ -57,7 +58,7 @@ li {
 }
 
 a {
-  color: var(--text-color);
+  color: var(--text-color-primary);
 }
 
 .logo {
@@ -95,7 +96,7 @@ ul a:hover {
 
 /* Burger menu */
 .mobile-button {
-  color: var(--text-color);
+  color: var(--text-color-primary);
   font-size: 2rem;
   border: 0;
   background-color: transparent;
@@ -116,7 +117,7 @@ section {
   text-align: center;
   padding-top: 6rem;
   padding-bottom: 10rem;
-  color: var(--text-color);
+  color: var(--text-color-primary);
 }
 
 .ref-anchor {
@@ -138,7 +139,7 @@ section {
 }
 
 .ref-anchor:hover {
-  color: var(--text-color);
+  color: var(--text-color-primary);
   background-position: 100% 100%;
 }
 
@@ -157,7 +158,7 @@ section {
 
 .title-text {
   font-size: 2.3rem;
-  color: var(--text-color);
+  color: var(--text-color-primary);
   overflow: hidden;
   border-right: 0.2rem solid #062930; /* to create the typewriter cursor effect*/
   white-space: nowrap;
@@ -226,7 +227,7 @@ section {
 }
 
 .bio-text {
-  color: #300d06;
+  color: var(--text-color-secondary);
   font-size: 1.5rem;
   text-align: center;
   padding: 4rem 4rem 0 4rem;
@@ -258,7 +259,7 @@ section {
   overscroll-behavior-inline: contain; /* to contain the scrolling behavior */
   height: 40rem;
   max-width: 100%;
-  border: 2px solid red;
+  margin-left: 1.5rem;
 }
 
 .project-item {
@@ -267,16 +268,49 @@ section {
   width: 35rem;
   height: 34rem;
   padding: 2rem;
-  transition: 1s;
+  transition: 0.8s;
   border-radius: 10px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   /* scroll-snap-align: center; */
   background-color: rgb(240, 255, 255);
+  text-align: center;
 }
 
 .project-item:hover {
   transform: scale(1.1);
+  background-color: #d4fedd;
+}
+
+.project-item img {
+  height: 50%;
+  width: 65%;
+  /* border: 1px solid #252525; */
+  margin: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.project-item h3 {
+  font-size: 1.2rem;
+  color: var(--text-color-primary);
+}
+
+.project-item p {
+  font-size: 1rem;
+  padding: 0.5rem;
+  color: var(--text-color-secondary);
+}
+
+.project-item a {
+  color: var(--text-color-primary);
+}
+
+.project-item a:hover {
+  background-color: #252525;
+  color: white;
+  padding: 5px;
+  border-radius: 3px;
+  transition: 0.3s ease-out;
 }
 
 /* contact section starts */
@@ -299,7 +333,7 @@ section {
 .container-contact label {
   line-height: 2.5rem;
   font-weight: bold;
-  color: #300d06;
+  color: var(--text-color-secondary);
   font-size: 1.2rem;
 }
 
@@ -325,15 +359,15 @@ section {
   border-radius: 3px;
   font-size: 1rem;
   font-weight: bolder;
-  color: #062930;
+  color: var(--text-color-primary);
 }
 
 .submit-button:hover {
   background-color: #d4fedd;
-  color: #300d06;
+  color: var(--text-color-secondary);
   border: 2px solid #062930;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.7s;
 }
 
 .social-section {
@@ -352,10 +386,10 @@ section {
 
 footer > p {
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: bold;
   padding: 1.2rem;
-  color: var(--text-color);
+  color: var(--text-color-primary);
 }
 
 /* To fit in the smaller screens */
