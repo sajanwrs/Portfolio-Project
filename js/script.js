@@ -37,3 +37,23 @@ const url =
 function resumeReader() {
   window.open(url, "_blank");
 }
+
+// burger menu script
+const mobIcon = document.querySelector("#mobile-button");
+
+const ul = document.querySelector("nav ul");
+
+const nav = document.querySelector("nav");
+
+mobIcon.addEventListener("click", () => {
+  ul.classList.toggle("show");
+});
+
+//To hide the menu after the link is clicked
+const menu = document.querySelectorAll(".nav-item");
+
+menu.forEach((items) => {
+  items.addEventListener("click", () => {
+    ul.classList.remove("show");
+  });
+});
