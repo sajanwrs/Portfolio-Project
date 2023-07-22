@@ -393,9 +393,12 @@ footer > p {
 
 /* To fit in the smaller screens */
 @media screen and (max-width: 600px) {
+  .section-titile {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
   nav {
     padding: 1.5rem 1rem;
-    overflow: visible;
   }
   nav ul {
     position: fixed;
@@ -421,37 +424,52 @@ footer > p {
     transform: translateX(0);
   }
 
-  /* .container-nav {
-    font-size: 0.6rem;
-    padding: 0.5rem;
-    position: fixed;
-    top: 0;
-    height: fit-content;
+  /* hero section */
+  .container-hero {
+    /* margin-top: -4rem; */
+    flex-direction: column;
+    gap: 0;
   }
-  body {
-    font-size: 0.5rem;
-  }
-  section {
-    flex-basis: 33%;
-  }
-  .container-hero,
+
   .title-text {
     font-size: 0.8rem;
   }
 
   .name {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
-
   .ref-anchor {
-    font-size: 0.5rem;
     display: block;
-    padding: 5px 5px;
+    font-size: 0.5rem;
+    padding: 5px;
+    width: 70px;
   }
-
-  .ref-anchor:hover {
-    background: #80ffd4;
-    color: #062930;
-    transition: all 0.3s;
+  /* about section */
+  .container-about {
+    flex-direction: column;
+    margin-top: 0.8rem;
+  }
+  .skill-section,
+  .bio {
+    width: 60%;
+  }
+  .skill-section h3 {
+    font-size: 0.8rem;
+    padding: 1rem;
+  }
+  .icon-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+  }
+  .skill-icon {
+    font-size: 3rem;
+    padding: 0.8rem;
+  }
+  /* .bio {
+    text-align: center;
+    padding: 0.5rem;
+  }
+  .bio-text {
+    font-size: 0.8rem;
   } */
 }
