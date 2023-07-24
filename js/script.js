@@ -24,10 +24,10 @@ document.documentElement.style.setProperty(
 
 const e = document.getElementById("bio-text");
 
-const bio =
-  "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque eum tempora ratione consequatur doloribus, aperiam alias laborum enim excepturi culpa officia, ea quisquam a voluptates, esse beatae molestias delectus corporis.";
+// const bio =
+//   "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque eum tempora ratione consequatur doloribus, aperiam alias laborum enim excepturi culpa officia, ea quisquam a voluptates, esse beatae molestias delectus corporis.";
 
-e.append(bio);
+// e.append(bio);
 
 //RESUME reader script
 
