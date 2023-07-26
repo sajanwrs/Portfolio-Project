@@ -88,7 +88,7 @@ a {
 
 ul a:hover {
   background-color: hsl(160, 100%, 75%);
-  color: rgb(255, 255, 255);
+  color: #252525;
   padding: 0.6rem;
   transition: all 0.3s ease 0s;
   border-radius: 5px;
@@ -216,19 +216,19 @@ section {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
   background-color: #d4fedd;
-  height: 35vh;
+  height: 36vh;
 }
 
 .bio {
   width: var(--about-content-width);
   padding: 0.6rem;
   text-align: center;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .bio-text {
   color: var(--text-color-secondary);
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   text-align: center;
   padding: 4rem 4rem 0 4rem;
 }
@@ -236,7 +236,7 @@ section {
 .skill-section {
   width: var(--about-content-width);
   text-align: center;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .skill-section h3 {
@@ -272,7 +272,6 @@ section {
   border-radius: 10px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-  /* scroll-snap-align: center; */
   background-color: rgb(240, 255, 255);
   text-align: center;
 }
@@ -370,9 +369,8 @@ section {
 }
 
 .social-section {
-  margin-top: 2rem;
   text-align: center;
-  padding: 1rem;
+  padding-top: 1rem;
 }
 
 .soc-icon {
@@ -382,16 +380,19 @@ section {
 
 /* footer */
 /* ************************************* */
-
+footer {
+  background-color: #062930;
+}
 footer > p {
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: bold;
-  padding: 1.2rem;
-  color: var(--text-color-primary);
+  padding: 2rem;
+  /* color: var(--text-color-primary); */
+  color: #80ffd4;
 }
 
-/* To fit in the smaller screens */
+/*############# To fit in the smaller screens ###########*/
 @media screen and (max-width: 600px) {
   .section-titile {
     font-size: 1.2rem;
@@ -455,7 +456,7 @@ footer > p {
   }
   .skill-section h3 {
     margin-top: 1rem;
-    font-size: 0.8rem;
+    font-size: 1rem;
     padding: 1rem;
   }
   .icon-wrapper {
@@ -473,7 +474,46 @@ footer > p {
   }
   .bio-text {
     margin-top: 2rem;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     padding: 0.8rem;
+  }
+  /* project section */
+  .container-projects {
+    flex-direction: column;
+    overflow-y: auto;
+  }
+  .project-item {
+    width: 80%;
+    height: 50%;
+  }
+  .project-item h3 {
+    font-size: 1rem;
+  }
+  .project-item p {
+    font-size: 0.9rem;
+  }
+  .project-item a {
+    font-size: 0.8rem;
+  }
+  /* contact section */
+  .container-contact {
+    max-width: 80%;
+    margin: auto;
+  }
+  .container-contact label {
+    font-size: 1rem;
+  }
+  .form-input {
+    font-size: 0.9rem;
+  }
+  .soc-icon {
+    font-size: 2rem;
+  }
+  footer {
+    margin: auto;
+    padding: 1rem;
+  }
+  footer p {
+    font-size: 1rem;
   }
 }

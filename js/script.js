@@ -1,5 +1,5 @@
 // Script for scrolling to the specified section
-const navItems = document.querySelectorAll(".container-nav a");
+const navItems = document.querySelectorAll("a");
 
 navItems.forEach((anchor) => anchor.addEventListener("click", smoothScroll));
 
@@ -57,3 +57,8 @@ menu.forEach((items) => {
     ul.classList.remove("show");
   });
 });
+
+//Footer year update
+const year = new Date();
+
+document.querySelector("#current-year").append(year.getFullYear());
