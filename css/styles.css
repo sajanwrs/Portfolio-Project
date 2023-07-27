@@ -393,6 +393,12 @@ footer > p {
 }
 
 /*############# To fit in the smaller screens ###########*/
+@media (hover: none) {
+  a:hover {
+    color: inherit;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .section-titile {
     font-size: 1.2rem;
@@ -486,6 +492,10 @@ footer > p {
     width: 80%;
     height: 50%;
   }
+  .project-item img {
+    height: 40%;
+    width: 60%;
+  }
   .project-item h3 {
     font-size: 1rem;
   }
@@ -515,5 +525,80 @@ footer > p {
   }
   footer p {
     font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  body {
+    margin: 0 auto;
+    overflow-x: hidden;
+  }
+  .section-titile {
+    font-size: 1.8rem;
+    padding: 3rem;
+  }
+  .title-text {
+    font-size: 1.6rem;
+  }
+  .name {
+    font-size: 2rem;
+  }
+  .skill-section,
+  .bio {
+    width: 40%;
+    margin-top: 10rem;
+  }
+  .icon-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    padding-top: 3rem;
+  }
+  .skill-icon {
+    overflow-x: hidden;
+    font-size: 3rem;
+    padding: 1.8rem;
+  }
+  .bio {
+    overflow-y: auto;
+  }
+  .bio-text {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+  .container-projects {
+    flex-direction: column;
+    overflow-y: auto;
+    align-items: center;
+  }
+  .project-item {
+    width: 80%;
+    height: 55%;
+  }
+  .project-item img {
+    height: 45%;
+    width: 50%;
+  }
+  .project-item h3 {
+    font-size: 1.3rem;
+  }
+  .project-item p {
+    font-size: 1rem;
+  }
+  .project-item a {
+    font-size: 0.9rem;
+  }
+  .container-contact {
+    max-width: 80%;
+    margin-top: 8rem;
+  }
+  .container-contact label {
+    font-size: 1rem;
+  }
+  .form-input {
+    font-size: 0.9rem;
+  }
+  .soc-icon {
+    font-size: 2rem;
+    margin-top: 2rem;
   }
 }
