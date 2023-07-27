@@ -22,7 +22,7 @@ document.documentElement.style.setProperty(
 
 //About Me
 
-const e = document.getElementById("bio-text");
+// const e = document.getElementById("bio-text");
 
 // const bio =
 //   "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque eum tempora ratione consequatur doloribus, aperiam alias laborum enim excepturi culpa officia, ea quisquam a voluptates, esse beatae molestias delectus corporis.";

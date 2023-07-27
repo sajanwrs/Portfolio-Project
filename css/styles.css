@@ -244,6 +244,11 @@ section {
   font-size: 1.5rem;
 }
 
+.icon-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+}
+
 .skill-icon {
   font-size: 5rem;
   padding: 4rem;
