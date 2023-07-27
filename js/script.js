@@ -20,15 +20,6 @@ document.documentElement.style.setProperty(
   navHeight + "px"
 );
 
-//About Me
-
-// const e = document.getElementById("bio-text");
-
-// const bio =
-//   "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque eum tempora ratione consequatur doloribus, aperiam alias laborum enim excepturi culpa officia, ea quisquam a voluptates, esse beatae molestias delectus corporis.";
-
-// e.append(bio);
-
 //RESUME reader script
 
 const url =
@@ -56,6 +47,19 @@ menu.forEach((items) => {
   items.addEventListener("click", () => {
     ul.classList.remove("show");
   });
+});
+
+//Contact success message
+
+document.getElementById("contact-form").addEventListener("submit", (e) => {
+  e.preventDefault(); //To prevent the form from being submitted normally
+
+  const status = document.getElementById("status");
+  status.innerText = "Thanks for getting in touch.";
+
+  setTimeout(() => {
+    status.style.opacity = "0";
+  }, 4000);
 });
 
 //Footer year update

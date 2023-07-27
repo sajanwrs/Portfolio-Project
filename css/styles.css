@@ -374,9 +374,21 @@ section {
   transition: 0.7s;
 }
 
+#status {
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  padding-top: 2rem;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--text-color-primary);
+  transition: opacity 3s ease-out;
+}
+
 .social-section {
   text-align: center;
-  padding-top: 1rem;
+  padding-top: 2rem;
 }
 
 .soc-icon {
@@ -522,12 +534,15 @@ footer > p {
   .form-input {
     font-size: 0.9rem;
   }
+  #status {
+    font-size: 0.8rem;
+  }
   .soc-icon {
     font-size: 2rem;
   }
   footer {
-    margin: auto;
-    padding: 1rem;
+    margin-top: 2rem;
+    padding: 0.5rem;
   }
   footer p {
     font-size: 1rem;
