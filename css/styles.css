@@ -230,7 +230,8 @@ section {
   color: var(--text-color-secondary);
   font-size: 1.3rem;
   text-align: center;
-  padding: 4rem 4rem 0 4rem;
+  padding: 3rem;
+  white-space: pre-wrap;
 }
 
 .skill-section {
