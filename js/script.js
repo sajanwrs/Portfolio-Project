@@ -52,7 +52,8 @@ menu.forEach((items) => {
 //Contact success message
 
 document.getElementById("contact-form").addEventListener("submit", (e) => {
-  e.preventDefault(); //To prevent the form from being submitted normally
+  // e.preventDefault();
+  //To prevent the form from being submitted normally
 
   const status = document.getElementById("status");
   status.innerText = "Thanks for getting in touch.";
