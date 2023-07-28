@@ -62,6 +62,19 @@ document.getElementById("contact-form").addEventListener("submit", (e) => {
   }, 4000);
 });
 
+//Social Links
+const linkedin = "https://www.linkedin.com";
+
+const github = "https://github.com";
+
+function openLinedIn() {
+  window.open(linkedin, "_blank");
+}
+
+function openGithub() {
+  window.open(github, "_blank");
+}
+
 //Footer year update
 const year = new Date();
 
