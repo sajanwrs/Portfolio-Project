@@ -79,3 +79,7 @@ function openGithub() {
 const year = new Date();
 
 document.querySelector("#current-year").append(year.getFullYear());
+
+if (isset($_POST["_blacklist"]) && $_POST["_blacklist"] != "") {
+  exit();
+}

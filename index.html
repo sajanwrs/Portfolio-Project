@@ -104,6 +104,14 @@
     <h2 class="section-titile">Get in Touch</h2>
     <div class="container-contact">
       <form action="https://formsubmit.co/mrahman.job@outlook.com" method="POST" id="contact-form">
+        <!-- Honeypot field -->
+        <input type="text" name="_honey" style="display:none">
+        <!-- Spam filtering -->
+        <input type="hidden" name="_blacklist" value="spammy pattern, banned term, phrase">
+        <!-- Disable reCaptcha -->
+        <input type="hidden" name="_captcha" value="false">
+        <!-- Email template -->
+        <input type="hidden" name="_template" value="table">
         <div>
           <label for ="name">Name</label>
           <input 
