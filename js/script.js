@@ -49,6 +49,23 @@ menu.forEach((items) => {
   });
 });
 
+//Project link open button
+const project1 = "https://sajanwrs.github.io/Little-Lemon-Restaurant/";
+
+const project2 = "https://sajanwrs.github.io/calculator-app/";
+
+const project3 = "https://sajanwrs.github.io/robofriends/";
+
+function projLinkOpener(proj) {
+  if (proj == "project_1") {
+    window.open(project1, "_blank");
+  } else if (proj == "project_2") {
+    window.open(project2, "_blank");
+  } else if (proj == "project_3") {
+    window.open(project3, "_blank");
+  }
+}
+
 //Contact success message
 
 document.getElementById("contact-form").addEventListener("submit", (e) => {
@@ -63,9 +80,9 @@ document.getElementById("contact-form").addEventListener("submit", (e) => {
 });
 
 //Social Links
-const linkedin = "https://www.linkedin.com";
+const linkedin = "https://www.linkedin.com/in/md-warisur-rahman/";
 
-const github = "https://github.com";
+const github = "https://github.com/sajanwrs";
 
 function openLinedIn() {
   window.open(linkedin, "_blank");
@@ -79,7 +96,3 @@ function openGithub() {
 const year = new Date();
 
 document.querySelector("#current-year").append(year.getFullYear());
-
-if (isset($_POST["_blacklist"]) && $_POST["_blacklist"] != "") {
-  exit();
-}
