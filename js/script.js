@@ -23,7 +23,7 @@ document.documentElement.style.setProperty(
 //RESUME reader script
 
 const url =
-  "https://drive.google.com/file/d/1dmxxe6ypx4ovj4smt5RMXzd_Ae1KddbO/preview";
+  "https://drive.google.com/file/d/1CAL-mq23q0pa_Gv9GslZkI6UGTQoDhdC/view?usp=sharing";
 
 function resumeReader() {
   window.open(url, "_blank");
